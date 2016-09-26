@@ -11,9 +11,10 @@ before_install:
 
 install:
   - npm install canvas vega-lite
+  - PATH=$PATH:$(npm bin)
   
 
 script:
   - vl2vg  test.json
   - vl2png test.json > test.png
-  - vl2eps test.json > test.eps
+  - vl2svg test.json > test.eps
