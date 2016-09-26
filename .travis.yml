@@ -10,7 +10,7 @@ before_install:
 
 
 install:
-  - npm install canvas vega-lite
+  - npm install canvas vega vega-lite
   - PATH=$PATH:$(npm bin)
   
 
